@@ -51,7 +51,8 @@ end subroutine get_param_real
                  "other diffusivities. Otherwise, the larger of kappa-\n"//&
                  "shear and ePBL diffusivities are used.", default=1.)
 ```
-4. Recompile the model and run the MOM6 executable for an experiment that 
+4. Recompile the model and run the MOM6 executable for an experiment that uses ePBL (e.g. Baltic_OM4_05)
+5. Check MOM_parameter_doc.all and 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTY3ODcxNDYsMTEyODE0MDg2NF19
+eyJoaXN0b3J5IjpbLTE5NjQ1MDQ1OSwxMTI4MTQwODY0XX0=
 -->
