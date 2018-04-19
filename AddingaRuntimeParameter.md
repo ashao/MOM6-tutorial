@@ -1,9 +1,6 @@
 # Adding a runtime parameter to MOM6
 ## Introduction
-Most of the MOM6 related options are **NOT** configured using a traditional Fortran namelist. While these types of
-namelists provide an easy programming interface, it is difficult to make the model self-documenting. The MOM6 solution
-is to instead read from a text file containing the runtime parameters. This tutorial demonstrates the changes to the
-source code needed to specify a Prandtl number when adding the turbulent diffusivity diagnosed from the energetic
+Most of the MOM6 related options are **NOT** configured using a traditional Fortran namelist. While these types of namelists provide an easy programming interface, it is difficult to make the model self-documenting. The MOM6 solution is to instead read from a text file containing the runtime parameters. This tutorial demonstrates the changes to the source code needed to specify a Prandtl number when adding the turbulent diffusivity diagnosed from the energetic
 planetary boundary layer scheme to the eddy viscosity used for momentum (line 819 of
 src/MOM6/src/parameterizations/vertical/MOM_diabatic_driver.F90)
 
@@ -52,7 +49,7 @@ end subroutine get_param_real
                  "shear and ePBL diffusivities are used.", default=1.)
 ```
 4. Recompile the model and run the MOM6 executable for an experiment that uses ePBL (e.g. Baltic_OM4_05)
-5. Check MOM_parameter_doc.all and 
+5. Check MOM_parameter_doc.all and verify that EPBL_PRANDTL is now documented
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjQ1MDQ1OSwxMTI4MTQwODY0XX0=
+eyJoaXN0b3J5IjpbNzM5MzYwODgyLDExMjgxNDA4NjRdfQ==
 -->
