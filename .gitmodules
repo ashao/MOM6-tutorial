@@ -1,0 +1,3 @@
+[submodule "MOM6-examples"]
+	path = MOM6-examples
+	url = https://github.com/NOAA-GFDL/MOM6-examples.git
